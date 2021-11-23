@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>animate demo</title>
+  
+  <style>
+  
+  	img{
+		opacity:0.5;
+		
+		
+		}
+  
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script>
+  
+  	$(document).ready( function(){
+								
+				$("#imagen").click( function(){
+											 
+							$(this).animate(
+											{
+												marginLeft:"+=150px"
+											}, 1000);
+											
+											
+											 
+											 
+				});
+				
+				$("#imagen").mouseover( function(){
+												 
+												 
+							$(this).animate(
+											{
+												opacity:1
+											}, 250);					 
+												 
+				});
+				
+				$("#imagen").mouseout( function(){
+												 
+												 
+							$(this).animate(
+											{
+												opacity:0.5
+											}, 250);					 
+												 
+				});
+				
+				
+	});
+								   
+							   
+								   
+								   
+								   				
+								
+	
+					  					  
+	
+  
+  
+  
+  
+  </script>
+  
+  
+  
+</head>
+<body>
+ 
+<img src="coche.png" width="300" height="200" id="imagen">
+ 
+</body>
+</html>
